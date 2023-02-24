@@ -1,0 +1,94 @@
+<!-- definição do documento html5 -->
+<!DOCTYPE html>
+<!-- elemento raiz com atributo lang (linguagem) -->
+<html lang="pt-br" class="light">
+  <!-- configurações do documento que não são visíveis -->
+  <head>
+    <!-- importa a fonte 'Inter' utilizada no projeto (origem: google fonts) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- conjuntos de caracteres utilizados na página -->
+    <meta charset="UTF-8" />
+    <!-- compatibilidade com navegadores antigos -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- tamanho da área visível -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- título da página -->
+    <title>Portfólio</title>
+    <!-- "linka" com a pasta que contém o css -->
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <!-- parte visível da página -->
+  <body>
+    <div id="container">
+      <div id="profile">
+        <img
+          src="./assets/profilePicDark.png"
+          alt="Foto de Victor Mont Mor com expressão facial neutra, usando um smoking cinza escuro com uma blusa preta por baixo."
+        />
+        <p>@victor.mor</p>
+      </div>
+
+      <div id="switch" onclick="toggleTheme()">
+        <button></button>
+        <span></span>
+      </div>
+
+      <ul>
+        <li>
+          <a href="#" target="_blank">Teste</a>
+        </li>
+        <li>
+          <a href="#" target="_blank">Redes sociais</a>
+        </li>
+        <li>
+          <a href="#" target="_blank">Entre em contato</a>
+        </li>
+        <li>
+          <a href="https://github.com/MontMor4" target="_blank"
+            >Ver Portfólio</a
+          >
+        </li>
+      </ul>
+
+      <div id="socialMediaLinks">
+        <a href="https://github.com/MontMor4" target="_blank">
+          <ion-icon name="logo-github"></ion-icon>
+        </a>
+        <a href="https://www.instagram.com/victor.mor/" target="_blank">
+          <ion-icon name="logo-instagram"></ion-icon>
+        </a>
+        <a
+          href="https://www.linkedin.com/in/victor-samuel-levindo-mont-mor-3787a8238/"
+          target="_blank"
+        >
+          <ion-icon name="logo-linkedin"></ion-icon>
+        </a>
+        <a href="https://www.youtube.com/@montmor5345/videos" target="_blank">
+          <ion-icon name="logo-youtube"></ion-icon>
+        </a>
+      </div>
+      <footer>
+        <p>Página feita para estudos <ion-icon name="heart"></ion-icon></p>
+      </footer>
+    </div>
+
+    <!-- Script que importa os ícones do ionicons -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+
+    <script src="script.js"></script>
+  </body>
+</html>
